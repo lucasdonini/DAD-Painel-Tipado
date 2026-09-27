@@ -143,3 +143,24 @@ body {
   border-bottom: 3px solid var(--cor-acento);
   font-weight: bold;
 }
+
+.busca {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-1);
+  margin: 0 0 16px;
+}
+
+.busca label {
+  font-size: 0.9rem;
+  color: var(--cor-texto-suave);
+}
+
+.busca input {
+  border: 1px solid var(--cor-botao-borda);
+  background: var(--cor-aba-fundo);
+  color: var(--cor-texto);
+  border-radius: var(--raio-botao);
+  padding: 8px 10px;
+  font-size: 0.95rem;
+}
