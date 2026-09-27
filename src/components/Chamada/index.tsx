@@ -24,7 +24,10 @@ function Chamada({ alunos, onPresenca }: ChamadaProps) {
     <section className="quadro">
       <h2>Chamada</h2>
       <p className="placar">Presentes: {presentes} de {alunos.length}</p>
-      {todosPresentes && <p className="completa">turma completa!</p>}
+      {/* {todosPresentes && <p className="completa">turma completa!</p>} */}
+      <p className="aviso" role="status" aria-live="polite">
+        {todosPresentes && <span className="completa">turma completa!</span>}
+      </p>
 
       <div className="busca">
         <label htmlFor="busca-aluno">Buscar aluno</label>

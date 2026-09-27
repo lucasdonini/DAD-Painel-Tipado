@@ -45,9 +45,17 @@ body {
   color: var(--cor-ok-texto);
 }
 
+.aviso {
+  margin: 0 0 16px;
+
+  &:empty {
+    margin: 0;
+  }
+}
+
 .completa {
   display: inline-block;
-  margin: 0 0 16px;
+  margin: 0;
   padding: 3px 12px;
   border-radius: var(--raio-pilula);
   background: var(--cor-ok-fundo);
@@ -163,4 +171,11 @@ body {
   border-radius: var(--raio-botao);
   padding: 8px 10px;
   font-size: 0.95rem;
+}
+
+button:focus-visible,
+.aba:focus-visible,
+.busca input:focus-visible {
+  outline: 3px solid var(--cor-foco);
+  outline-offset: 2px;
 }
