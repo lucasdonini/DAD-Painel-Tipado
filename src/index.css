@@ -1,12 +1,12 @@
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  color: #eaf0f7;
+  color: var(--cor-texto);
 }
 
 body {
   margin: 0;
   min-height: 100vh;
-  background: linear-gradient(160deg, #1b2a52, #0d1420);
+  background: linear-gradient(160deg, var(--cor-fundo-1), var(--cor-fundo-2));
 }
 
 .painel {
@@ -18,40 +18,40 @@ body {
 .cabecalho h1 {
   margin: 0;
   font-size: 2rem;
-  color: #7cc0ff;
+  color: var(--cor-acento);
 }
 
 .cabecalho p {
-  margin: 4px 0 24px;
-  color: #9db4d0;
+  margin: var(--espaco-1) 0 24px;
+  color: var(--cor-texto-suave);
   font-style: italic;
 }
 
 .quadro {
-  background: #16223d;
-  border: 1px solid #2b3b5e;
-  border-radius: 12px;
+  background: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-cartao);
   padding: 20px 22px;
 }
 
 .quadro h2 {
-  margin: 0 0 8px;
+  margin: 0 0 var(--espaco-2);
   font-size: 1.3rem;
 }
 
 .placar {
-  margin: 0 0 4px;
+  margin: 0 0 var(--espaco-1);
   font-weight: bold;
-  color: #8fe0b0;
+  color: var(--cor-ok-texto);
 }
 
 .completa {
   display: inline-block;
   margin: 0 0 16px;
   padding: 3px 12px;
-  border-radius: 999px;
-  background: #143d2a;
-  color: #8fe0b0;
+  border-radius: var(--raio-pilula);
+  background: var(--cor-ok-fundo);
+  color: var(--cor-ok-texto);
   font-weight: bold;
   font-size: 0.95rem;
 }
@@ -65,9 +65,9 @@ body {
 .cartao {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: var(--espaco-3);
   padding: 10px 12px;
-  border-top: 1px solid #2b3b5e;
+  border-top: 1px solid var(--cor-borda);
 }
 
 .cartao .nome {
@@ -79,7 +79,7 @@ body {
   text-align: right;
   font-variant-numeric: tabular-nums;
   font-weight: bold;
-  color: #7cc0ff;
+  color: var(--cor-acento);
 }
 
 .badge {
@@ -89,57 +89,57 @@ body {
   font-size: 0.95rem;
   font-weight: bold;
   padding: 3px 10px;
-  border-radius: 999px;
+  border-radius: var(--raio-pilula);
 }
 
 .badge.ok {
-  background: #143d2a;
-  color: #8fe0b0;
+  background: var(--cor-ok-fundo);
+  color: var(--cor-ok-texto);
 }
 
 .badge.nope {
-  background: #4a2a14;
-  color: #ffcf9e;
+  background: var(--cor-nope-fundo);
+  color: var(--cor-nope-texto);
 }
 
 .cartao button {
   min-width: 150px;
   text-align: center;
-  border: 1px solid #4a5a7e;
-  background: #22314f;
-  color: #cbd8ec;
-  border-radius: 6px;
+  border: 1px solid var(--cor-botao-borda);
+  background: var(--cor-botao-fundo);
+  color: var(--cor-botao-texto);
+  border-radius: var(--raio-botao);
   padding: 6px 10px;
   cursor: pointer;
 }
 
 .cartao button:hover {
-  background: #2c3c60;
+  background: var(--cor-botao-hover);
 }
 
 .abas {
   display: flex;
-  gap: 8px;
+  gap: var(--espaco-2);
   margin: 0 0 16px;
 }
 
 .aba {
-  border: 1px solid #2b3b5e;
-  background: #101a30;
-  color: #cbd8ec;
-  border-radius: 8px 8px 0 0;
+  border: 1px solid var(--cor-borda);
+  background: var(--cor-aba-fundo);
+  color: var(--cor-botao-texto);
+  border-radius: var(--raio-aba) var(--raio-aba) 0 0;
   padding: 8px 18px;
   cursor: pointer;
   font-size: 0.95rem;
 }
 
 .aba:hover {
-  background: #1a2740;
+  background: var(--cor-aba-hover);
 }
 
 .aba.ativa {
-  background: #16223d;
-  color: #7cc0ff;
-  border-bottom: 3px solid #7cc0ff;
+  background: var(--cor-superficie);
+  color: var(--cor-acento);
+  border-bottom: 3px solid var(--cor-acento);
   font-weight: bold;
 }
